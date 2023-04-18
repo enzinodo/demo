@@ -73,7 +73,7 @@
   },
   "blogs": {
     "article": {
-      "read_more": "Maggiori informazioni test",
+      "read_more": "Maggiori informazioni",
       "no_matches": "Spiacenti, non ci sono articoli pubblicati per questo blog"
     },
     "comments": {
