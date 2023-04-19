@@ -29,7 +29,7 @@
 
     {%- form 'recover_customer_password' -%}
       {% assign recover_success = form.posted_successfully? %}
-      <div class="field"> test
+      <div class="field">  
         <input
           type="email"
           value=""
@@ -43,7 +43,7 @@
           aria-describedby="RecoverEmail-email-error"
           autofocus
           {% endif %}
-          placeholder="{{ 'customer.login_page.email' | t }}">
+          placeholder="{{ 'customer.login_page.email' | t }} test">
         <label for="RecoverEmail">
           {{ 'customer.login_page.email' | t }}
         </label>
