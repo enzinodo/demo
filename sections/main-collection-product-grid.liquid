@@ -28,11 +28,6 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding">
-
-
-fklòdfkalfkalfklafkòal
-
-  
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
@@ -107,9 +102,6 @@ fklòdfkalfkalfklafkòal
     {%- endif -%}
 
     <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
-
-zczccsdcc
-    
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
@@ -200,12 +192,7 @@ zczccsdcc
     {% render 'mask-arch' %}
   {%- endif -%}
 </div>
-
-
-testtest
-
-
-
+ 
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
