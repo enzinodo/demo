@@ -2,6 +2,19 @@
 {%- assign totalProducts = collection.products.size -%}
 
 <div class="collection-template" data-section-id="{{ section.id }}" data-section-type="collection-template">
+
+
+{% if available %}
+  {% if product.price_varies and template == 'collection' %}
+    <p>From {{ product.price_min | money }} to {{ product.price_max | money }}</p>
+  {% else %}
+    <p>{{ product.price | money }}</p>
+  {% endif %}
+{% else %}
+  <p>Sold out</p>
+{% endif %}
+
+  
   {% paginate collection.products by limit %}
 
   {% if section.settings.collection_hero_image and collection.image %}
